@@ -1,6 +1,9 @@
 
                 {
-                    "name": "wiprwp",
+                    "name": "wiprwp21",
                     "app_id": "com.imabuilder.solutionsbydesign.wiprwp",
-                    "type": "ionic1"
+                    "type": "custom",
+                      "integrations": {
+                        "cordova": {}
+                      }
                 }
