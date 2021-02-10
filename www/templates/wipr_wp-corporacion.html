@@ -1,0 +1,36 @@
+	<ion-view view-title=" corporacion" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll  id="page-corporacion" class=" page-corporacion">
+		
+			<!-- code refresh -->
+			<ion-refresher pulling-text="{{ 'Pull to refresh...' | translate }}"  on-refresh="doRefresh()"></ion-refresher>
+			<!-- ./code refresh -->
+			
+
+			<!-- code listing -->
+
+			<div class="list">
+				<div class="item item-text-wrap" ng-repeat="item in data_corporacions | limitTo:50:0"   >
+					<img image-lazy-src="{{item.x_featured_media}}" />
+					<img image-lazy-src="{{item.x_featured_media_original}}" />
+					<h1 ng-bind-html="item.title.rendered | to_trusted"></h1>
+					<div class="to_trusted {{ fontsize }}" ng-bind-html="item.content.rendered | strHTML"></div>
+					<p>Share Link</p>
+					<div class="button-bar">
+						<button class="button button-small button-assertive icon ion-social-googleplus" ng-click="openURL('https://plus.google.com/share?url=' + item.link)"></button>
+						<button class="button button-small button-positive icon ion-social-facebook" ng-click="openURL('https://facebook.com/sharer/sharer.php?u=' + item.link)"></button>
+						<button class="button button-small button-calm icon ion-social-twitter" ng-click="openURL('https://twitter.com/share?url=' + item.link)"></button>
+						<button class="button button-small button-assertive-900 icon ion-social-pinterest" ng-click="openURL('https://pinterest.com/pin/create/bookmarklet/?&url=' + item.link)"></button>
+						<button class="button button-small button-positive-900 icon ion-social-linkedin" ng-click="openURL('https://www.linkedin.com/shareArticle?url=' + item.link)"></button>
+					</div>
+				</div>
+			</div>
+
+			<!-- ./code listing -->
+
+
+
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

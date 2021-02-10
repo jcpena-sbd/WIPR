@@ -1,0 +1,18 @@
+
+        {
+          "name": "WIPR WP Lite",
+          "short_name": "WIPR WP",
+          "start_url": "index.html",
+          "display": "standalone",
+          "icons":[{"src": "data/images/avatar/wipr-blu.png"}],
+          "prefer_related_applications": true,
+          "related_applications": [
+            {
+              "platform": "play",
+              "id": "com.imabuilder.solutionsbydesign.wiprwp"
+            }
+          ],
+         "background_color": "#ffffff",
+         "theme_color": "#000000"
+        }
+                
