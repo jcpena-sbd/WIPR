@@ -1,0 +1,22 @@
+{
+  "name": "wiprwp21",
+  "version": "1.0.1",
+  "description": "WIPR Web conection app original concept in ionic",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcpena-sbd/WIPR.git"
+  },
+  "keywords": [
+    "wipr"
+  ],
+  "author": "Juan C. Pena Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcpena-sbd/WIPR/issues"
+  },
+  "homepage": "https://github.com/jcpena-sbd/WIPR#readme"
+}
